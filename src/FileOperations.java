@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.ArrayList;
 
 public class FileOperations {
-
+    // read from file
     public static int[] readFromFile(String filePath) throws IOException {
         ArrayList<Integer> list = new ArrayList<>();
         BufferedReader br = new BufferedReader(new FileReader(filePath));
@@ -22,7 +22,7 @@ public class FileOperations {
         }
         return array;
     }
-
+    //write to file data
     public static void writeToFile(String filePath, int[] array) throws IOException {
         BufferedWriter bw = new BufferedWriter(new FileWriter(filePath));
         for (int i = 0; i < array.length; i++) {

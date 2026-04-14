@@ -45,7 +45,7 @@ public class Main {
 
         System.out.println("\n===== QUICK SORT =====");
 
-        // First
+        // first
         start = System.currentTimeMillis();
         QuickSort.sortFirst(Arrays.copyOf(random, random.length), 0, random.length - 1);
         end = System.currentTimeMillis();
@@ -70,7 +70,7 @@ public class Main {
         System.out.println("QuickSort (first) - Decreasing: " + (end - start) + " ms");
         FileOperations.writeToFile("quicksort_first_decreasing_out.txt", Arrays.copyOf(decreasing, n));
 
-        // Last
+        // last
         start = System.currentTimeMillis();
         QuickSort.sortLast(Arrays.copyOf(random, random.length), 0, random.length - 1);
         end = System.currentTimeMillis();
@@ -120,7 +120,7 @@ public class Main {
         System.out.println("QuickSort (middle) - Decreasing: " + (end - start) + " ms");
         FileOperations.writeToFile("quicksort_middle_decreasing_out.txt", Arrays.copyOf(decreasing, n));
 
-        // Random
+        // random
         start = System.currentTimeMillis();
         QuickSort.sortRandom(Arrays.copyOf(random, random.length), 0, random.length - 1);
         end = System.currentTimeMillis();
@@ -145,7 +145,7 @@ public class Main {
         System.out.println("QuickSort (random) - Decreasing: " + (end - start) + " ms");
         FileOperations.writeToFile("quicksort_random_decreasing_out.txt", Arrays.copyOf(decreasing, n));
 
-        // Median
+        // median
         start = System.currentTimeMillis();
         QuickSort.sortMedian(Arrays.copyOf(random, random.length), 0, random.length - 1);
         end = System.currentTimeMillis();
